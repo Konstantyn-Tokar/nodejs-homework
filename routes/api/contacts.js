@@ -1,7 +1,8 @@
 const express = require("express");
 const { NotFound, BadRequest } = require("http-errors");
 
-const { Contact, joiSchema } = require("../../models");
+const { joiSchema } = require("../../models/contact");
+const { Contact } = require("../../models");
 
 const router = express.Router();
 
